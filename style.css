@@ -97,6 +97,25 @@ div.post_head > h3 {
   color: #25da00;
 }
 
+div.post > img{
+  display: block;
+  width: 61.8%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.img_sub {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  color: #646464;
+  font-size: 10pt;
+}
+
 p.post_content {
   margin: 16px;
 }
