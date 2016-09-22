@@ -80,12 +80,6 @@ a {
   margin-right: auto;
 }
 
-@media (max-width: 800px){
-  #body{
-    width: 80%;
-  }
-}
-
 div.post{
   box-shadow: 2px 2px 6px #252525;
   padding-bottom: 8px;
@@ -125,4 +119,17 @@ p.img_sub {
 
 p.post_content {
   margin: 16px;
+}
+
+@media (max-width: 800px){
+
+  #body{
+    width: 80%;
+  }
+
+
+  div.post > img{
+    width: 80%;
+  }
+
 }
