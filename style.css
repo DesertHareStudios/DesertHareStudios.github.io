@@ -173,6 +173,8 @@ p.post_content {
   width: 61.8%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 @media (max-width: 800px){
