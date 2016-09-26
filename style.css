@@ -107,6 +107,42 @@ div.post > img{
   margin-right: auto;
 }
 
+div.post_tetraimg {
+  width: 61.8%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.tetra-tl{
+  position: relative;
+  width: 49%;
+  top: 0px;
+  left: 0px;
+}
+
+img.tetra-tr{
+  position: relative;
+  width: 49%;
+  top: 0px;
+  right: 0px;
+}
+
+img.tetra-bl{
+  position: relative;
+  width: 49%;
+  bottom: 0px;
+  left: 0px;
+}
+
+img.tetra-br{
+  position: relative;
+  width: 49%;
+  bottom: 0px;
+  right: 0px;
+}
+
+
 p.img_sub {
   display: block;
   text-align: center;
@@ -121,6 +157,24 @@ p.post_content {
   margin: 16px;
 }
 
+#popup-img{
+  position: fixed;
+  background-color: #000;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#popup-img > img {
+  display: block;
+  width: 61.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 800px){
 
   #body{
@@ -129,6 +183,14 @@ p.post_content {
 
 
   div.post > img{
+    width: 80%;
+  }
+
+  div.post_tetraimg{
+    width: 80%;
+  }
+
+  #popup-img > img{
     width: 80%;
   }
 
