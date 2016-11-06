@@ -13,10 +13,6 @@ h2, h3 {
   color: #25da00;
 }
 
-a {
-  font-shadow: 0px 0px 4px #25da00;
-}
-
 #head {
   position: absolute;
   top: 0px;
@@ -29,7 +25,6 @@ a {
 
 #logoMain {
   height: 64px;
-  margin-left: 8px;
   float: left;
 }
 
@@ -66,7 +61,7 @@ a {
 }
 
 #indicator {
-  margin-top: 6px;
+  margin-top: 4px;
   width: 100%;
   height: 8px;
   background-color: #25da00;
@@ -91,6 +86,12 @@ div.post{
 div.post_head {
   background-color: #252525;
   padding: 1px;
+}
+
+div.post_head > img.icon {
+  float: left;
+  margin: 8px;
+  width: 40px;
 }
 
 div.post_head > h3 {
@@ -157,6 +158,10 @@ p.post_content {
   margin: 16px;
 }
 
+.gp_button > img{
+  height: 64px;
+}
+
 #popup-img{
   position: fixed;
   background-color: #000;
@@ -183,6 +188,9 @@ p.post_content {
     width: 80%;
   }
 
+  #random {
+    display: none;
+  }
 
   div.post > img{
     width: 80%;
