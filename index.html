@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Desert Hare Studios</title>
+    <script>
+      var colorPrimary = "#252525";
+      var colorAccent = "#25da00";
+    </script>
+    <link href="https://thewildsushii.github.io/tWS-Material/twsmaterial.css" rel="stylesheet">
+    <script src="https://thewildsushii.github.io/tWS-Material/twsmaterial.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="Desert Hare Studios" property="og:title">
@@ -19,23 +25,23 @@
     <obj type="tree" variant="winter"></obj>
     <obj type="cactus"></obj>
     <obj type="custom" src="http://desertharestudios.github.io/logo.png"></obj>
+    <!-- End of Project Network custom tags -->
 
-    <div id="head">
-      <div>
-        <img id="logoMain" src="logo.png">
-        <h2 style="float: left;">Desert Hare Studios</h2>
+    <header>
+      <img src="logo.png">
+      <h3>Desert Hare Studios</h3>
+    </header>
+
+      <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Games</a>
+        <a href="about.html">About</div></a>
       </div>
-      <div id="mainMenu">
-        <a href="index.html"><div><center>Home</center><div id="indicator"></div></div></a>
-        <a href="products.html"><div><center>Games</center></div></a>
-        <a href="about.html"><div><center>About</center></div></a>
-      </div>
-    </div>
 
     <div id="body">
 
-      <div class="post">
-        <div class="post_head">
+      <div class="card">
+        <div class="card_head">
           <h3>Project Network's map generator update</h3>
         </div>
         <div class="post_tetraimg">
@@ -44,17 +50,17 @@
           <img class="tetra-bl" src="gallery/project_network002-002.png" onclick="popUpImg(this)">
           <img class="tetra-br" src="gallery/project_network002-003.png" onclick="popUpImg(this)">
         </div>
-        <p class="post_content">The map generator is getting more complex over time and now there's the link panel, it gets the <b>href</b> attribute from an <b>a</b> tag and sends the player to that website. Some other interesting patterns have been found on the net.</p>
+        <p>The map generator is getting more complex over time and now there's the link panel, it gets the <b>href</b> attribute from an <b>a</b> tag and sends the player to that website. Some other interesting patterns have been found on the net.</p>
       </div>
 
-      <div class="post">
-        <div class="post_head">
+      <div class="card">
+        <div class="card_head">
           <h3>Project Network under development</h3>
         </div>
         <img src="gallery/project_network001.png" onclick="popUpImg(this)">
         <p class="img_sub">An example of a world generated with the Facebook website</p>
-        <p class="post_content">A new MMO based on the Megaman Battle Network series is under development right now. It generates the world using the real-world websites you use everyday, just type the URL and you're there.</p>
-        <p class="post_content"><a href="https://github.com/DesertHareStudios/Project-Network">Project Repository</a></p>
+        <p>A new MMO based on the Megaman Battle Network series is under development right now. It generates the world using the real-world websites you use everyday, just type the URL and you're there.</p>
+        <p><a href="https://github.com/DesertHareStudios/Project-Network">Project Repository</a></p>
       </div>
 
       <div id="popup-container"></div>
