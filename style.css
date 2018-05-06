@@ -101,6 +101,8 @@ footer {
     background-color: #252525;
     padding: 8px;
     min-height: 56px;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 footer > a > img {
@@ -129,5 +131,33 @@ footer > a > img {
 }
 
 @media(max-width: 800px) {
-    
+
+    #gameList {
+        height: 256px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .gameHeader {
+        display: inline-block;
+        margin: 16px;
+        width: 224px;
+        height: 224px;
+    }
+
+    .gameHeader > a > img {
+        height: 56px;
+        right: 4px;
+        bottom: 4px;
+    }
+
+    #pandapanda {
+        background-image: url("media/pandapandaicon.png");
+    }
+
+    #harerush {
+        background-image: url("media/harerushicon.png");
+    }
 }
