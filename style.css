@@ -5,42 +5,84 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #252525;
     font-family: Roboto, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: [start] 1fr [end];
-    grid-template-rows: [header] 56px [content] 1fr [end];
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0px;
+    left: 0px;
     background-color: #252525;
-    grid-column-start: start;
-    grid-column-end: end;
-    grid-row-start: header;
-    grid-row-end: content;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .26), 0px 0px 3px rgba(0, 0, 0, 0.26);
+    z-index: 2;
 }
 
-header > * {
-    float: left;
-    height: 40px;
-    margin: 8px;
-    color: #00ff00;
+header > a {
+    display: inline-block;
+    float: right;
+    margin-top: 18.5px;
+    margin-bottom: 18.5px;
+    margin-right: 16px;
+    text-decoration: none;
+    color: #00da00;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .26), 0px 0px 1px rgba(0, 0, 0, 0.26);
+
 }
 
-header > h3 {
-    margin: 16px;
-    height: 24px;
+#wrapper {
+    background-color: #f0f0f0;
+    margin-top: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 100vh,
 }
 
-#content {
-    grid-column-start: start;
-    grid-column-end: end;
-    grid-row-start: content;
-    grid-row-end: end;
-    display: grid;
-    grid-template-columns: [blog] 1fr [products] 1fr [about] 1fr [end];
-    grid-template-rows: [start] 1fr [end];
+#wrapper > h1, #wrapper > h2, #wrapper > h3 {
+    text-align: center;
+    padding: 8px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .26), 0px 0px 1px rgba(0, 0, 0, 0.26);
+}
+
+#logo {
+    position: fixed;
+    left: 64px;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    background-color: #252525;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .26), 0px 0px 3px rgba(0, 0, 0, 0.26);
+    z-index: 2;
+}
+
+.gameHeader {
+    position: relative;
+    width: 1024px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    background-size: 100%;
+}
+
+.gameHeader > a > img {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    height: 80px;
+}
+
+#harerush {
+    background-image: url("media/harerushheader.png");
+}
+
+#pandapanda {
+    background-image: url("media/pandapandaheader.png")
 }
 
 .card {
@@ -48,65 +90,45 @@ header > h3 {
     border-radius: 2px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .26), 0px 0px 1px rgba(0, 0, 0, 0.26);
     margin: 8px;
-    padding-bottom: 1px;
-}
-
-.content > .blog {
-    grid-row-start: start;
-    grid-row-end: end;
-    grid-column-start: blog;
-}
-
-.content > .products {
-    grid-row-start: start;
-    grid-row-end: end;
-    grid-column-start: products;
-}
-
-.content > .about {
-    grid-row-start: start;
-    grid-row-end: end;
-    grid-column-start: about;
-}
-
-.card img, .card a img {
-    height: 64px;
+    padding: 8px;
 }
 
 .card p {
     margin: 8px;
+    text-align: justify;
 }
 
-.card_head {
+footer {
     background-color: #252525;
-    height: 56px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;;
+    padding: 8px;
+    min-height: 56px;
 }
 
-.card_head > * {
+footer > a > img {
+    display: inline-block;
     float: left;
-    color: #00ff00;
-    height: 40px;
-    margin: 8px:
-}
-
-.card_head > h3 {
-    margin: 16px;
-    height: 24px;
-}
-
-.card_head > img {
-    width: 40px;
     height: 40px;
     margin: 8px;
 }
 
-@media(max-width: 800px) {
-    
-    #content {
-        grid-template-columns: [start] 1fr [end];
-        grid-template-rows: [start] 1fr [end];
+@media(max-width: 1056px) {
+    .gameHeader {
+        width: 800px;
+        height: 390.625px;
     }
+}
+
+@media(max-width: 832px) {
+    .gameHeader {
+        width: 500px;
+        height: 244.140625px;
+    }
+
+    .gameHeader > a > img {
+        height: 56px;
+    }
+}
+
+@media(max-width: 800px) {
     
 }

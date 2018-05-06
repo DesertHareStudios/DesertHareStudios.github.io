@@ -1,79 +1,53 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Desert Hare Studios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="Desert Hare Studios" property="og:title">
-    <meta property="og:image" content="preview.png"/>
-    <meta property="og:description" content="We are a group of students of computer science that love videogames and pizza" />
-    <link href="style.css" rel="stylesheet">
-    <link href="favicon.ico" rel="shorcut icon">
-    <script src="script.js"></script>
-  </head>
-  <body>
+    <head>
+        <title>Desert Hare Studios</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta content="Desert Hare Studios" property="og:title">
+        <meta property="og:image" content="preview.png"/>
+        <meta property="og:description" content="We are a group of students of computer science that love videogames and pizza" />
+        <link href="style.css" rel="stylesheet">
+        <link href="favicon.ico" rel="shorcut icon">
+        <script src="script.js"></script>
+    </head>
+    <body>
 
-    <header>
-        <img src="logo.png">
-        <h3>Desert Hare Studios</h3>
-    </header>
+        <header>
+            <img src="logo.png" id="logo">
+            <a href="#acerca">Acerca</a>
+            <a href="#juegos">Juegos</a>
+        </header>
 
-    <div id="content">
-      
-        <div class="blog">
+        <div id="wrapper">
+
+            <h2 id="juegos">Juegos</h2>
+
+            <div id="harerush" class="gameHeader">
+                <a class="gp_button" href="https://play.google.com/store/apps/details?id=dhs.harerush"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a>
+            </div>
+
+            <div id="pandapanda" class="gameHeader">
+                <a class="gp_button" href='https://play.google.com/store/apps/details?id=tws.projectpanda&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+            </div>
+
+
+            <h2 id="acerca">Acerca</h2>
 
             <div class="card">
-                <div class="card_head">
-                    <h3>Something great is coming...</h3>
-                </div>
-                <p>After a long break. We are finally working hard, two games are being developed at this time, wait fot them.</p>
+                <p>Somos un estudio de videojuegos mexicano con el fin de poner en alto a México y que sea reconocido como un país desarrollador de videojuegos.</p>
+                <p>Nos fundamos con una simple idea de hacer videojuegos con amor y con el propósito de dar a los jugadores juegos con una esencia única, que les recuerden a los juegos de su niñez y que lleguen a su corazón y mostrar historias únicas de las que te enamorarás.</p>
+                <p>Esperamos crecer y dar más juegos al mundo un toque especial y ser reconocido como los grandes y a su vez mostrarles al mundo que México puede hacer lo que se proponga.</p>
             </div>
 
         </div>
 
-        <div class="products">
+        <footer>
+            <a href="https://twitter.com/DHareStudios"><img src="icons/twitter.png"></a>
+            <a href="https://www.facebook.com/DesertHareStudios/"><img src="icons/facebook.png"></a>
+            <a href="https://www.youtube.com/channel/UCkPbVlGj5goabojvKl3RtQQ"><img src="icons/youtube.png"></a>
+            <a href="mailto:dharestudios@gmail.com"><img src="icons/gmail.png"></a>
+        </footer>
 
-            <div class="card">
-                <div class="card_head">
-                    <img src="icons/Hare Editor Logo.png">
-                    <h3>Hare Editor</h3>
-                </div>
-                <p>A graphical environment for developing using Hare Engine.<i>(WIP)</i></p>
-                <a class="gp_button" href="https://github.com/DesertHareStudios/Hare-Editor-Windows"><img src="icons/github_logo.png"></a>
-            </div>
-
-            <div class="card">
-                <div class="card_head">
-                    <img src="icons/Hare Editor Logo.png">
-                    <h3>Hare Engine</h3>
-                </div>
-                <p>A game engine using C# and OpenGL.<i>(also WIP...)</i></p>
-                <a class="gp_button" href="https://github.com/DesertHareStudios/Hare-Engine"><img src="icons/github_logo.png"></a>
-            </div>
-
-        </div>
-
-        <div class="about">
-
-            <div class="card">
-                <div class="card_head">
-                    <h3>About us</h3>
-               </div>
-                <p>We are a group of students of computer science that love videogames and pizza</p>
-            </div>
-
-            <div class="card">
-                <div class="card_head">
-                    <h3>Contact</h3>
-               </div>
-                <a href="mailto:dharestudios@gmail.com"><img class="icon" src="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico"></a>
-                <a href="https://github.com/DesertHareStudios/"><img class="icon" src="icons/Octocat.png"></a>
-            </div>
-
-        </div>
-      
- 
-    </div>
-
-  </body>
+    </body>
 </html>
