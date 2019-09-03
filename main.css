@@ -4,7 +4,7 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: #dadbdc;
+    background-color: rgb(241,223,221);
     margin: 0px;
     padding: 0px;
 }
@@ -15,12 +15,12 @@ div * {
 
 a {
     text-decoration: none;
-    color: #4F7600;
+    color: rgb(43,193,180);
 }
 
 a:hover {
     text-decoration: underline;
-    color: #85BE13;
+    color: rgb(90,251,231);
 }
 
 header {
@@ -31,10 +31,11 @@ header {
     top: 0px;
     width: 100%;
     height: 56px;
-    background: -moz-linear-gradient(left,  hsla(0,0%,0%,1) 0%, hsla(120,73%,62%,0.76) 62%, hsla(0,71%,61%,0.61) 100%);
-    background: -webkit-linear-gradient(left,  hsla(0,0%,0%,1) 0%,hsla(120,73%,62%,0.76) 62%,hsla(0,71%,61%,0.61) 100%);
-    background: linear-gradient(to right,  hsla(0,0%,0%,1) 0%,hsla(120,73%,62%,0.76) 62%,hsla(0,71%,61%,0.61) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#9ce25555',GradientType=1 );
+    animation-duration: 6.5s;
+    animation-name: breathebg;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 header a:hover {
@@ -105,10 +106,6 @@ section > h2 {
     font-size: 24pt;
 }
 
-#products {
-    background-color: #DADBDC;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -146,24 +143,8 @@ section > h2 {
     height: 80px;
 }
 
-#partners {
-    background: #dadbdc;
-    background: -moz-linear-gradient(top,  hsla(210,3%,86%,1) 0%, hsla(120,73%,62%,1) 100%);
-    background: -webkit-linear-gradient(top,  hsla(210,3%,86%,1) 0%,hsla(120,73%,62%,1) 100%);
-    background: linear-gradient(to bottom,  hsla(210,3%,86%,1) 0%,hsla(120,73%,62%,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadbdc', endColorstr='#57e557',GradientType=0 );
-}
-
-#jobs {
-    background: #57e557;
-    background: -moz-linear-gradient(top,  hsl(120,73%,62%) 0%, hsl(0,73%,62%) 100%);
-    background: -webkit-linear-gradient(top,  hsl(120,73%,62%) 0%,hsl(0,73%,62%) 100%);
-    background: linear-gradient(to bottom,  hsl(120,73%,62%) 0%,hsl(0,73%,62%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57e557', endColorstr='#e55757',GradientType=0 );    
-}
-
 footer {
-    background-color: #E55757;
+    background-color: rgb(238,149,144);
     padding: 16px;
     margin: 0px;
     width: calc(100% - 32px);
@@ -200,28 +181,10 @@ footer > * {
 
 @keyframes breathebg {
     0% {
-        background-color: #000000;
-        box-shadow: 0px 0px 16px #000000;
-    }
-    61.8% {
-        background-color: #56E256;
-        box-shadow: 0px 0px 16px #56E256;
+        background-color: rgb(61,188,217);
     }
     100% {
-        background-color: #E25656;
-        box-shadow: 0px 0px 16px #E25656;
-    }
-}
-
-@keyframes breathe {
-    0% {
-        color: #000000;
-    }
-    61.8% {
-        color: #56E256;
-    }
-    100% {
-        color: #E25656;
+        background-color: rgb(83,193,146);
     }
 }
 
@@ -272,16 +235,12 @@ footer > * {
     font-size: 32pt;
 }
 #welcome > div > a:hover {
-    animation-duration: 0.618s;
-    animation-name: breathe;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 16px;
     margin-right: 16px;
     text-decoration: none;
+    color: rgb(238,149,144);
 }
 
 @media(max-width: 800px) {
