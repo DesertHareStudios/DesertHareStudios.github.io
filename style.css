@@ -68,11 +68,14 @@ header p {
 .columns {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .columns>* {
     flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
 }
 
 .horizontalwrap {
