@@ -98,18 +98,19 @@ header p {
 
 .card {
     background-color: #2e2e2e;
-    border-radius: 2px;
+    border-radius: 48px;
     margin: 8px;
 }
 
 .card>img {
     width: 100%;
     height: auto;
-    border-radius: 2px;
+    border-radius: 48px;
 }
 
 .card>h1,
 .card>h2,
+.card>h3,
 .card>p {
     text-align: center;
 }
