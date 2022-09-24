@@ -1,12 +1,12 @@
 * {
     scroll-behavior: smooth;
+    font-family: 'Lexend', sans-serif;
 }
 
 
 body {
     background-color: #171717;
     color: #ffffff;
-    font-family: 'Lexend Deca', sans-serif;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -142,20 +142,55 @@ footer * {
     filter: invert(1);
 }
 
-.document {
+article h1, section h1 {
+    font-size: 2em;
+}
+
+article.document {
     margin: 24px;
     padding: 24px;
     background-color: #e2e2e2;
     border-radius: 2px;
 }
 
-.document h1,
-.document h2,
-.document h3,
-.document h4,
-.document p,
-.document li {
-    color: #171717;
+article.document * {
+    word-wrap: break-word;
 }
 
-@media only screen and (max-width: 800px) {}
+article.document *:not(a) {
+    color: #1c1c1c;
+}
+
+ul.simple, ol.simple {
+    list-style: none;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+table, th, td {
+    border: 1px solid #1c1c1c;
+    border-radius: 2px;
+}
+
+table * {
+    font-size: 0.9em;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th.centered, td.centered {
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    table * {
+        font-size: 1em;
+    }
+
+}
