@@ -1,19 +1,21 @@
 {
-    "name": "Desert Hare Studios",
-    "short_name": "Desert Hare Studios",
-    "icons": [
-        {
-            "src": "android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#198887",
-    "background_color": "#198887",
-    "display": "standalone"
+  "name": "Desert Hare Studios",
+  "short_name": "DHS",
+  "icons": [
+    {
+      "src": "assets/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#38aff4",
+  "background_color": "#c8e8fe",
+  "display": "standalone"
 }
