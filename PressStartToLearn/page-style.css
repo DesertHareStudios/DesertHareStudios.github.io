@@ -1,0 +1,278 @@
+header {
+    width: 100vw;
+    height: 16rem;
+    /* aspect-ratio: 3.14159; */
+    background-color: var(--accent-container);
+    color: var(--on-accent-container)
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#logo {
+    display: block;
+    margin: -4rem auto 0rem auto;
+    height: 8rem;
+    width: 8rem;
+}
+
+#logo.app-icon {
+    border-radius: 2rem;
+}
+
+#DHS {
+    display: block;
+    margin: -1rem auto 0rem auto;
+    height: 3.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.error {
+    color: var(--error)!important;
+}
+
+main {
+    max-width: 45rem;
+    margin: 0rem auto;
+    padding: 0rem 1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.links > a {
+    flex-basis: 2rem;
+}
+
+.links > a > svg {
+    display: block;
+    margin: 0rem auto;
+    width: 1.5rem;
+    fill: var(--on-surface);
+}
+
+.links.large > a {
+    flex-basis: 3rem;
+}
+
+.links.large > a > svg {
+    display: block;
+    margin: 0rem auto;
+    width: 2.25rem;
+    fill: var(--on-surface);
+}
+
+.links > a:hover > svg {
+    fill: var(--accent);
+}
+
+#content-tabs {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#content-tabs label {
+    flex-basis: 9rem;
+    flex-grow: 1;
+    display: flex;
+    gap: 0.5rem;
+    vertical-align: middle;
+    line-height: 1.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--accent-container);
+    color: var(--on-accent-container);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.125rem;
+    border-color: transparent;
+}
+
+#content-tabs label:hover {
+    border-color: var(--outline);
+}
+
+#content-tabs label:has(:checked) {
+    background-color: var(--accent);
+    color: var(--on-accent);
+}
+
+.material-symbols-rounded {
+    font-size: 1.75rem;
+}
+
+#content-tabs label:hover .material-symbols-rounded {
+    font-variation-settings: "FILL" 1;
+}
+
+#content-tabs label:has(:checked) .material-symbols-rounded {
+    font-variation-settings: "FILL" 1;
+    background-color: var(--accent);
+    color: var(--on-accent);
+}
+
+#content-tabs input {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+body:has(#gamesTab:checked) #games,
+body:has(#techdemosTab:checked) #techdemos,
+body:has(#opensourceTab:checked) #opensource,
+body:has(#ambassadorsTab:checked) #ambassadors {
+    display: block;
+}
+
+section {
+    padding: 0rem 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cards > a  {
+    flex-basis: 16rem;
+    flex-shrink: 1;
+    gap: 1rem;
+    background-color: var(--surface-container);
+    color: var(--on-surface);
+    position: relative;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cards > a:hover {
+    background-color: var(--surface-container-high);
+}
+
+.cards > a:active {
+    background-color: var(--surface-container-highest);
+}
+
+.cards > a > .cover {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.cards > a > h4 {
+    margin: 0.5rem 1rem;
+}
+
+.cards > a > p {
+    margin: 0.25rem 1rem;
+    font-size: 0.75em;
+    color: var(--on-surface-variant);
+}
+
+.cards > a > .icons {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+.cards > a > .icons > * {
+    flex-basis: 1.5rem;
+    fill: var(--on-surface-variant);
+}
+
+.slide-gallery {
+    display: flex;
+    height: 24rem;
+    background-color: var(--surface-container-low);
+    margin: 1rem 0rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.slide-gallery > img {
+    height: 100%;
+    width: auto;
+    border-radius: 0.25rem;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-style: solid;
+    border-width: 0.125rem;
+    border-color: transparent;
+}
+
+.slide-gallery > img:hover {
+    border-color: var(--outline);
+}
+
+footer {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--surface-container-lowest);
+    font-size: 0.75em;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer div {
+    max-width: 45rem;
+    display: flex;
+    margin: 0rem auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article {
+    padding: 2rem 1rem;
+}
+
+article table {
+    background-color: var(--outline-variant);
+}
+
+article table tr:nth-child(even) {
+    background-color: var(--surface-container-low);
+}
+
+article table tr:nth-child(odd) {
+    background-color: var(--surface-container);
+}
