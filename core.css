@@ -3,7 +3,6 @@
 }
 
 * {
-    transition: all 83ms ease-in-out;
     border-color: var(--outline);
     min-width: 0px;
 }
@@ -32,23 +31,23 @@ p {
 }
 
 h1 {
-    font-size: 2.25em;
-}
-
-h2 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 1.8em;
+}
+
 h3 {
-    font-size: 1.75em;
+    font-size: 1.6em;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 h5 {
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 
 h6 {
@@ -75,4 +74,28 @@ a:hover {
 b .material-symbols-rounded {
     font-variation-settings:
         'wght' 700;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+article {
+    padding: 2rem 1rem;
+}
+
+article table {
+    background-color: var(--outline-variant);
+}
+
+article table tr:nth-child(even) {
+    background-color: var(--surface-container-low);
+}
+
+article table tr:nth-child(odd) {
+    background-color: var(--surface-container);
 }
